@@ -1,7 +1,73 @@
-h1{
-    color:white;
-}
+
 
 body{
-    background-color:lightslategray;
+    background-color:grey;
+    text-align: center;
+    /*font-size: 25px; /* Példa méret: 20 pixel */
+}
+
+header { /*fejléc*/
+    display: flex;
+    background-color: rgb(39, 40, 40);
+    justify-content: space-between; /*FIXME:nem pontos a középre illesztés*/
+    align-items: center;
+    padding: 30px 2%; /*allul fellül px jobbra ballra % -os a behúzás*/
+    
+}
+
+
+header .h_title{ /* fejléc cards cím*/
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    
+    
+}
+
+header .h_text { /*fejléc szöveg*/
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(242, 87, 79);
+    text-decoration: none;
+    align-items: center;
+    
+
+}
+
+header .h_button { /*fejléc main page custum gomb*/
+    padding: 9px 24px; /*FIXME:gomb szövegtől függően eltolja a töle balra lévő itemet*/
+    background-color: greenyellow;
+    color:black;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: bolder;
+    
+    
+}
+
+.h_button:hover { /*ha ráviszem az egeret kijelöli*/
+    background-color: aqua;
+    
+}
+
+a{
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+h1{
+    color:black;
 }
