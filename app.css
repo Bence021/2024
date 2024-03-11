@@ -71,3 +71,18 @@ button {
 h1{
     color:black;
 }
+
+/*CHATGPT*/
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 200px; /* Válassza meg a megfelelő méretet */
+    height: 300px; /* Válassza meg a megfelelő méretet */
+    margin: 10px;
+    object-fit: contain; /* Változtattuk ezt az értéket */
+  }
+/*ideáig*/
