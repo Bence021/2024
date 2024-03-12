@@ -91,20 +91,33 @@ h1{
 }
 /*ideáig*/
 
-.card-name{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: end;
-}
-
 .name{
     width: 200px; /* szélesség */
-    height: 30px; /* magasság */
+    height: auto; /* magasság */
     margin: 10px 3px 0px 3px; /*minden irányba rés*/
     padding-top: 5px;
     object-fit: contain; /* igazítás*/
     color: azure;
     background-color: rgb(39, 40, 40);
-    border: 2px solid greenyellow; /* Fekete szegély hozzáadása */
+    
+    border-left: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid rgb(255, 255, 255);
+    border-top: 2px solid rgb(255, 255, 255);
+    border-bottom: none;
+}
+
+.series-name{
+    width: 200px; /* szélesség */
+    height: auto; /* magasság */
+    font-size: 12.5px;
+    margin: 0px 3px 0px 3px; /*minden irányba rés*/
+    padding-bottom: 5px;
+    object-fit: contain;  /*igazítás*/
+    color: rgb(133, 243, 255);
+    background-color: rgb(39, 40, 40);
+    
+    border-left: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid rgb(255, 255, 255);
+    border-top: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
