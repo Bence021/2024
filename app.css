@@ -80,13 +80,31 @@ h1{
     justify-content: center;
     align-items: end;
     
-  }
+}
   
-  .card {
+.card {
     width: 200px; /* szélesség */
-    height: 300px; /* magasság */
-    margin: 3px; /*minden irányba rés*/
+    height: auto; /* magasság */
+    margin: 0px 3px 0px 3px; /*minden irányba rés*/
     object-fit: contain; /* igazítás*/
     border: 2px solid black; /* Fekete szegély hozzáadása */
-  }
+}
 /*ideáig*/
+
+.card-name{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: end;
+}
+
+.name{
+    width: 200px; /* szélesség */
+    height: 30px; /* magasság */
+    margin: 10px 3px 0px 3px; /*minden irányba rés*/
+    padding-top: 5px;
+    object-fit: contain; /* igazítás*/
+    color: azure;
+    background-color: rgb(39, 40, 40);
+    border: 2px solid greenyellow; /* Fekete szegély hozzáadása */
+}
