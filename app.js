@@ -21,8 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
             const innerContainer = document.createElement('div');
             cardContainer.appendChild(innerContainer);
             
-            /*const cardSeries = document.createElementById('cardSeries');
-            const cardRarity = document.createElementById('cardRarity');*/
+            
+            //const cardRarity = document.createElementById('cardRarity');
 
             const cardName = document.createElement('div');
             const Name = document.createTextNode(card.CharacterName); 
@@ -30,15 +30,16 @@ document.addEventListener("DOMContentLoaded", function () {
             cardName.appendChild(Name);
             innerContainer.appendChild(cardName);
 
-            
-            /*cardSeries.textContent = card.CharacterName;
-            cardSeries.classList.add('card');
-            //innerContainer.appendChild(cardSeries);
+            const cardSeries = document.createElement('div');
+            const Series = document.createTextNode(card.SeriesName);
+            cardSeries.classList.add('series-name');
+            cardSeries.appendChild(Series);
+            innerContainer.appendChild(cardSeries);
 
             
-            cardRarity.textContent = card.CharacterName;
+            /*cardRarity.textContent = card.CharacterName;
             cardRarity.classList.add('card');
-            //innerContainer.appendChild(cardRarity);*/
+            innerContainer.appendChild(cardRarity);*/
 
             const cardImage = document.createElement('img');       
             cardImage.referrerPolicy="noreferrer";
