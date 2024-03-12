@@ -85,7 +85,7 @@ h1{
   .card {
     width: 200px; /* szélesség */
     height: 300px; /* magasság */
-    margin: 5px; /*minden irányba rés*/
+    margin: 3px; /*minden irányba rés*/
     object-fit: contain; /* igazítás*/
     border: 2px solid black; /* Fekete szegély hozzáadása */
   }
