@@ -4,6 +4,7 @@ body{
     background-color:grey;
     text-align: center;
     /*font-size: 25px; /* Példa méret: 20 pixel */
+    margin: 0;
 }
 
 header { /*fejléc*/
@@ -11,8 +12,8 @@ header { /*fejléc*/
     background-color: rgb(39, 40, 40);
     justify-content: space-between; /*FIXME:nem pontos a középre illesztés*/
     align-items: center;
-    padding: 30px 2%; /*allul fellül px jobbra ballra % -os a behúzás*/
-    
+    padding: 12px 1.5%; /*allul fellül px jobbra ballra % -os a behúzás*/
+    margin: 0;
 }
 
 
@@ -77,13 +78,15 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: end;
+    
   }
   
   .card {
-    width: 200px; /* Válassza meg a megfelelő méretet */
-    height: 300px; /* Válassza meg a megfelelő méretet */
-    margin: 10px;
-    object-fit: contain; /* Változtattuk ezt az értéket */
+    width: 200px; /* szélesség */
+    height: 300px; /* magasság */
+    margin: 5px; /*minden irányba rés*/
+    object-fit: contain; /* igazítás*/
     border: 2px solid black; /* Fekete szegély hozzáadása */
   }
 /*ideáig*/

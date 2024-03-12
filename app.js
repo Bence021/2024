@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         data.cards.forEach(card => {
           if (card.HasImage === 'YES') {
             const cardElement = document.createElement('img');
+            cardElement.referrerPolicy="noreferrer";
             cardElement.src = card.ImageUrl;
             cardElement.alt = card.CharacterName;
             cardElement.classList.add('card');
