@@ -84,5 +84,6 @@ h1{
     height: 300px; /* Válassza meg a megfelelő méretet */
     margin: 10px;
     object-fit: contain; /* Változtattuk ezt az értéket */
+    border: 2px solid black; /* Fekete szegély hozzáadása */
   }
 /*ideáig*/
