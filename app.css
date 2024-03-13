@@ -75,7 +75,9 @@ h1{
 
 
 
-/*card container innen ------------------------------------------*/
+/* card container innen */
+/* <--------------------------------------------------------------------------------> */
+
 .card-container {
     display: flex;
     flex-wrap: wrap; /*képernyő szélén töri*/
@@ -96,63 +98,65 @@ h1{
 }
 
 .name{
-    width: 140px; /* szélesség */
-    height: auto; /* magasság */
-    margin: 10px 0px 0px 3px; /*minden irányba rés - fel job le bal*/
-    padding-top: 5px;
-    color: azure;
-    background-color: rgb(39, 40, 40);
+    width: 140px;                                           /*   szélesség                  */
+    height: auto;                                           /*   magasság                   */
+    margin: 10px 0px 0px 3px;  /*fel job le bal*/           /*   minden irányba külső tér   */ 
+    padding-top: 5px;                                       /*   belső felső tér            */
+    padding-left: 10px;                                     /*   belső bal oldali tér       */
+    color: azure;                                         /*   szöveg színe               */
+    background-color: rgb(39, 40, 40);                    /*   háttér színe               */
     
-    border-left: 2px solid rgb(255, 255, 255);
+    border-left: 2px solid rgb(255, 255, 255);            /*   szegély                    */
     border-right: none;
     border-top: 2px solid rgb(255, 255, 255);
     border-bottom: none;
 
+    text-align: left;                                       /*   szöveg igazítás            */
+
     overflow: hidden; /* A túlcsorduló tartalom elrejtése */
     white-space: nowrap; /* A szöveg több sorba törésének megakadályozása */
     text-overflow: ellipsis; /* Túlcsorduló szöveg esetén "..." megjelenítése */
-
-    text-align: left;
-    padding-left: 10px;
+    
 }
 
 .series-name{
 
-    width: 190px; /* szélesség */
-    height: auto; /* magasság */
-    font-size: 12.5px;
-    margin: 0px 3px 0px 3px; /*minden irányba rés*/
-    padding-bottom: 5px;
-    color: rgb(133, 243, 255);
-    background-color: rgb(39, 40, 40);
+    width: 190px;                                           /*   szélesség                  */
+    height: auto;                                           /*   magasság                   */
+    font-size: 12.5px;                                      /*   betűméret                  */
+    margin: 0px 3px 0px 3px; /*fel job le bal*/             /*   minden irányba külső tér   */
+    padding-bottom: 5px;                                    /*   belső felső tér            */
+    padding-left: 10px;                                     /*   belső bal oldali tér       */
+    color: rgb(133, 243, 255);                            /*   szöveg színe               */
+    background-color: rgb(39, 40, 40);                    /*   háttér színe               */
     
-    border-left: 2px solid rgb(255, 255, 255);
+    border-left: 2px solid rgb(255, 255, 255);            /*   szegély                    */
     border-right: 2px solid rgb(255, 255, 255);
     border-top: none;
     border-bottom: 2px solid rgb(255, 255, 255);
+
+    text-align: left;                                       /*   szöveg igazítás            */
 
     overflow: hidden; /* A túlcsorduló tartalom elrejtése */
     white-space: nowrap; /* A szöveg több sorba törésének megakadályozása */
     text-overflow: ellipsis; /* Túlcsorduló szöveg esetén "..." megjelenítése */
 
-    text-align: left;
-    padding-left: 10px;
-
 }
 
 .rarity{
+
+    width: 50px;                                            /*   szélesség                  */
+    height: auto;                                           /*   magasság                   */
+    margin: 10px 3px 0px 0px;   /*fel job le bal*/          /*   minden irányba külső tér   */
+    padding-top: 5px;                                       /*   belső felső tér            */
+    color: rgb(255, 255, 110);                            /*   szöveg színe               */
+    background-color: rgb(39, 40, 40);                    /*   háttér színe               */
     
-    width: 50px; /* szélesség */
-    height: auto; /* magasság */
-    margin: 10px 3px 0px 0px; /*minden irányba rés*/
-    padding-top: 5px;
-    color: rgb(255, 255, 110);
-    background-color: rgb(39, 40, 40);
-    
-    border-left: none;
+    border-left: none;                                      /*   szegély                    */
     border-right: 2px solid rgb(255, 255, 255);
     border-top: 2px solid rgb(255, 255, 255);
     border-bottom: none;
 
-    text-align: center;
+    text-align: center;                                     /*   szöveg igazítás            */
+
 }
