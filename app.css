@@ -146,7 +146,7 @@ h1{
     height: auto; /* magasság */
     margin: 10px 3px 0px 0px; /*minden irányba rés*/
     padding-top: 5px;
-    color: red;
+    color: rgb(255, 255, 110);
     background-color: rgb(39, 40, 40);
     
     border-left: none;
