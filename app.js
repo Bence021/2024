@@ -2,9 +2,11 @@ function alertbutton(){
     window.location.href = ""; //nincs funkciója
 }
 
-///CHATGPT generált kód
+///CARD betöltése
 // Fetch JSON data
 // app.js
+
+var setTitle = 'asd';
 
 document.addEventListener("DOMContentLoaded", function () {
     fetch('data/goddes-story.json')
@@ -14,6 +16,17 @@ document.addEventListener("DOMContentLoaded", function () {
         const cardContainer = document.getElementById('cardContainer');
 
         data.cards.forEach(card => {
+
+          if (setTitle !== card.SetNumber){
+            setTitle = card.SetNumber;
+            const setTitleContainer = document.createElement('div');
+            const Title = document.createTextNode(setTitle); 
+            setTitleContainer.classList.add('set-title');
+            setTitleContainer.appendChild(Title);
+            cardContainer.appendChild(setTitleContainer);
+          }
+
+
           if (card.HasImage === 'YES') {
 
             //belső container

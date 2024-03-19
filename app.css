@@ -73,10 +73,49 @@ h1{
     color:black;
 }
 
+/*filter bar*/
+/* <--------------------------------------------------------------------------------> */
 
+.filter-bar {
+    background-color: rgb(75, 75, 75);
+    border: 2px solid rgb(0, 0, 0);
+    margin: 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-wrap: wrap; /*képernyő szélén töri*/
+    justify-content: space-between;
+    align-items: end;  
+}
+
+.filter {
+    font-size: 25px;
+
+    color: greenyellow; /* greenyellow */
+    font-weight: bold; /* kiemelés */
+    text-shadow: 0 0 2px rgb(0, 0, 0); /* fehér szegély */
+    /*-webkit-text-stroke: 1px rgb(0, 0, 0); /* fehér szegély (webkit böngészőkön) */
+}
 
 /* card container innen */
 /* <--------------------------------------------------------------------------------> */
+
+:root{
+    --card-outerheader-color: rgb(255, 255, 255); 
+    --card-innerheader-color: rgb(40, 40, 40);      /*rgb(40, 40, 40)*/
+}
+
+.set-title{
+    font-size: 30px;
+    font-weight: bold;
+    background-color: white;
+    text-shadow: 2px 0px 2px greenyellow;
+    align-content: center; 
+    margin: 40px 0 0 0;
+
+    flex-basis: 100%
+}
+
 
 .card-container {
     display: flex;
@@ -104,14 +143,14 @@ h1{
     padding-top: 5px;                                       /*   belső felső tér            */
     padding-left: 10px;                                     /*   belső bal oldali tér       */
     color: azure;                                         /*   szöveg színe               */
-    background-color: rgb(39, 40, 40);                    /*   háttér színe               */
-    
-    border-left: 2px solid rgb(255, 255, 255);            /*   szegély                    */
-    border-right: none;
-    border-top: 2px solid rgb(255, 255, 255);
-    border-bottom: none;
+    background-color: var(--card-innerheader-color);                    /*   háttér színe               */
 
     text-align: left;                                       /*   szöveg igazítás            */
+
+    border-left: 2px solid var(--card-outerheader-color);            /*   szegély                    */
+    border-right: none;
+    border-top: 2px solid var(--card-outerheader-color);
+    border-bottom: none;
 
     overflow: hidden; /* A túlcsorduló tartalom elrejtése */
     white-space: nowrap; /* A szöveg több sorba törésének megakadályozása */
@@ -128,12 +167,12 @@ h1{
     padding-bottom: 5px;                                    /*   belső felső tér            */
     padding-left: 10px;                                     /*   belső bal oldali tér       */
     color: rgb(133, 243, 255);                            /*   szöveg színe               */
-    background-color: rgb(39, 40, 40);                    /*   háttér színe               */
+    background-color: var(--card-innerheader-color);                    /*   háttér színe               */
     
-    border-left: 2px solid rgb(255, 255, 255);            /*   szegély                    */
-    border-right: 2px solid rgb(255, 255, 255);
+    border-left: 2px solid var(--card-outerheader-color);            /*   szegély                    */
+    border-right: 2px solid var(--card-outerheader-color);
     border-top: none;
-    border-bottom: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid var(--card-outerheader-color);
 
     text-align: left;                                       /*   szöveg igazítás            */
 
@@ -150,11 +189,11 @@ h1{
     margin: 10px 3px 0px 0px;   /*fel job le bal*/          /*   minden irányba külső tér   */
     padding-top: 5px;                                       /*   belső felső tér            */
     color: rgb(255, 255, 110);                            /*   szöveg színe               */
-    background-color: rgb(39, 40, 40);                    /*   háttér színe               */
+    background-color: var(--card-innerheader-color);                    /*   háttér színe               */
     
     border-left: none;                                      /*   szegély                    */
-    border-right: 2px solid rgb(255, 255, 255);
-    border-top: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid var(--card-outerheader-color);
+    border-top: 2px solid var(--card-outerheader-color);
     border-bottom: none;
 
     text-align: center;                                     /*   szöveg igazítás            */
