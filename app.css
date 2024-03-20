@@ -105,7 +105,20 @@ h1{
     --card-innerheader-color: rgb(40, 40, 40);      /*rgb(40, 40, 40)*/
 }
 
+.title-text {
+    margin-left: auto;
+    padding-left: 35px;
+}
+
+.collapse-button {
+    margin-left: auto;
+}
+
 .set-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     font-size: 30px;
     font-weight: bold;
     background-color: white;
@@ -114,6 +127,12 @@ h1{
     margin: 40px 0 0 0;
 
     flex-basis: 100%
+}
+
+.collapsed {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease; /* Animáció hozzáadása a sima összecsukáshoz */
 }
 
 
@@ -167,7 +186,7 @@ h1{
     padding-bottom: 5px;                                    /*   belső felső tér            */
     padding-left: 10px;                                     /*   belső bal oldali tér       */
     color: rgb(133, 243, 255);                            /*   szöveg színe               */
-    background-color: var(--card-innerheader-color);                    /*   háttér színe               */
+    background-color: var(--card-innerheader-color);        /*   háttér színe               */
     
     border-left: 2px solid var(--card-outerheader-color);            /*   szegély                    */
     border-right: 2px solid var(--card-outerheader-color);
