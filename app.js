@@ -7,13 +7,23 @@ function alertbutton(){
 // app.js
 
 var setTitle = 'asd';
+//const cardContainer1 = document.getElementById('cardContainer');
 
 document.addEventListener("DOMContentLoaded", function () {
-    fetch('data/goddes-story.json')
-      .then(response => response.json())
-      .then(data => {
-
+  
+  fetch('data/goddes-story.json')
+    .then(response => response.json())
+    .then(data => {
+        
         const cardContainer = document.getElementById('cardContainer');
+        /*const cardContainer = document.createElement('div');
+        cardContainer.classList.add('card-container');
+        cardContainer1.appendChild(cardContainer);*/
+        
+        const setFullName = document.createElement('span');
+        setFullName.innerText= "Goddes Story";
+        setFullName.classList.add('set-fullname');
+        cardContainer.appendChild(setFullName);
 
         data.cards.forEach(card => {
 
@@ -126,9 +136,25 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             });
         });
+        
+        // Összes konténer összecsukása az oldal betöltődésekor
+        const innerContainers = document.querySelectorAll('[data-set-number]');
+        innerContainers.forEach(container => {
+            container.classList.add('collapsed');
+            container.style.height = '0';
+        });
 
-      })
-      .catch(error => console.error('Error loading JSON:', error));
-  });
+        // Összes gomb megnyomása az oldal betöltődésekor
+        const toggleButtonss = document.querySelectorAll('.collapse-button');
+        toggleButtonss.forEach(button => {
+            button.setAttribute('aria-pressed', 'true');
+        });
+
+    })
+    .catch(error => console.error('Error loading JSON:', error));
+
+});
+
+
 
 ///ideáig
