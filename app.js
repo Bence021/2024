@@ -263,6 +263,12 @@ document.addEventListener("DOMContentLoaded", function () {
             cardImage.src = card.ImageUrl;
             cardImage.alt = card.CharacterName;
             cardImage.classList.add('image');
+
+            // Kép hiba esetén méret beállítása
+            cardImage.onerror = function() {
+              cardImage.src ="data/NoImage.jpg";
+            };
+
             innerContainer.appendChild(cardImage);
             
 

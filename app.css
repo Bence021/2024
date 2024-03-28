@@ -39,7 +39,7 @@ header .h_text { /*fejléc szöveg*/
 
 header .h_button { /*fejléc main page custum gomb*/
     padding: 9px 24px; /*FIXME:gomb szövegtől függően eltolja a töle balra lévő itemet*/
-    background-color: greenyellow;
+    background-color: #adff2f;
     color:black;
     border: none;
     border-radius: 50px;
